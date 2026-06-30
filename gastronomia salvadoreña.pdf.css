@@ -1,0 +1,298 @@
+/* =====================================
+   GASTRONOMÍA SALVADOREÑA - ESTILO ELEGANTE
+===================================== */
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+/* Fondo general */
+body{
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    background:#faf5ef;
+    color:#333;
+    line-height:1.7;
+}
+
+/* =====================
+   HEADER
+===================== */
+
+header{
+    text-align:center;
+    background:#7a1f1f;
+    color:white;
+    padding-bottom:30px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+}
+
+header img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+header h1{
+    font-size:4rem;
+    margin-top:20px;
+    text-transform:uppercase;
+    letter-spacing:3px;
+}
+
+header h2{
+    font-size:1.4rem;
+    color:#ffd27f;
+    margin-top:10px;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+
+nav{
+    background:#d97706;
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin:15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:10px 15px;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#7a1f1f;
+}
+
+/* =====================
+   SECCIONES
+===================== */
+
+section{
+    padding:60px 10%;
+}
+
+section h2{
+    text-align:center;
+    font-size:2.5rem;
+    color:#7a1f1f;
+    margin-bottom:25px;
+    position:relative;
+}
+
+section h2::after{
+    content:"";
+    display:block;
+    width:100px;
+    height:4px;
+    background:#d97706;
+    margin:10px auto;
+}
+
+/* =====================
+   TARJETAS
+===================== */
+
+article{
+    background:white;
+    padding:25px;
+    margin:20px 0;
+    border-radius:15px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    transition:0.4s;
+}
+
+article:hover{
+    transform:translateY(-8px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+article h3{
+    color:#d97706;
+    margin-bottom:10px;
+}
+
+/* =====================
+   MENÚ
+===================== */
+
+#menu{
+    background:#fff3df;
+}
+
+#menu h3{
+    color:#7a1f1f;
+    margin-top:20px;
+}
+
+#menu ul{
+    margin-left:25px;
+}
+
+#menu li{
+    padding:6px;
+    font-size:1.05rem;
+}
+
+/* =====================
+   HISTORIA
+===================== */
+
+#historia{
+    background:#fffdf8;
+}
+
+/* =====================
+   SERVICIOS
+===================== */
+
+#servicios{
+    background:#fff3df;
+}
+
+/* =====================
+   FORMULARIO
+===================== */
+
+form{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+    color:#7a1f1f;
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ccc;
+    border-radius:8px;
+    font-size:1rem;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline:none;
+    border-color:#070997;
+}
+
+input[type="submit"]{
+    background:#7a1f1f;
+    color:white;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+input[type="submit"]:hover{
+    background:#1f0383;
+}
+
+input[type="reset"]{
+    background:#5006d9;
+    color:white;
+    border:none;
+    margin-top:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+input[type="reset"]:hover{
+    background:#200266;
+}
+
+/* =====================
+   CONTACTO
+===================== */
+
+#contacto{
+    text-align:center;
+    background:#fff8ee;
+}
+
+#contacto p{
+    margin:10px 0;
+}
+
+/* =====================
+   FOOTER
+===================== */
+
+footer{
+    background:#4b1111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+footer p{
+    margin:5px;
+}
+
+/* =====================
+   EFECTOS VISUALES
+===================== */
+
+section:hover h2{
+    color:#2b0450;
+    transition:0.3s;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media(max-width:768px){
+
+    header h1{
+        font-size:2.5rem;
+    }
+
+    header h2{
+        font-size:1rem;
+    }
+
+    nav ul{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    section{
+        padding:40px 5%;
+    }
+}
